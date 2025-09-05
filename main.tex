@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{fontspec}\usepackage{unicode-math}
+\setmainfont{Latin Modern Roman}\setmathfont{Latin Modern Math}
+\usepackage{hyperref}\usepackage{parskip}\usepackage{paracol}\usepackage{tcolorbox}
+
+\newcommand{\Eone}[1]{\noindent\textbf{[E1]}~#1}
+\newenvironment{disclaimer}{\tcolorbox[colback=black!2,colframe=black!25,
+  title=Disclaimer [E1]]}{\endtcolorbox}
+
+\title{System C0: Ontologia Kontrastu\\[4pt]\large Studium Translacji [E1]}
+\author{Zespół C0/E1}\date{\today}
+\begin{document}\maketitle
+\begin{disclaimer}
+Ten dokument jest warstwą interpretacyjną \textbf{[E1]}. Nie redefiniuje C0 (brak back‑prop).
+\end{disclaimer}
+\tableofcontents
+
+\section{Mapa C0 \textrightarrow{} [E1]} % (tabela mapowań)
+
+\section{Case studies}
+\subsection{XOR}
+\begin{paracol}{2}
+\section*{Lewa (C0)}
+% W przyszłości wkleimy tu kadry z Package A
+\switchcolumn
+\section*{Prawa ([E1] readings)}
+\Eone{Kategoryczne: …}\\
+\Eone{Procesowe: …}\\
+\Eone{Ostrzeżenie: to tylko czytania.}
+\end{paracol}
+
+\section{Opór języka \& firewall}
+\Eone{Praktyki obronne, tagowanie [E1], brak back‑prop.}
+
+\end{document}
